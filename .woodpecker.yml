@@ -1,9 +1,9 @@
  pipeline:
    build:
-     image: 7-jdk11-alpine
+     image: gradle:7-jdk11-alpine
      commands:
        - gradle build
    test:
-     image: 7-jdk11-alpine
+     image: gradle:7-jdk11-alpine
      commands:
        - gradle test
